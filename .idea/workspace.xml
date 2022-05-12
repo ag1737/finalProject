@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80b1db86-07aa-432f-89dd-e57c188fcbda" name="Changes" comment="testing update" />
+    <list default="true" id="80b1db86-07aa-432f-89dd-e57c188fcbda" name="Changes" comment="testing update">
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dsProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dsProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -32,6 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651848539828</updated>
       <workItem from="1651848541755" duration="14374000" />
+      <workItem from="1652382673687" duration="495000" />
     </task>
     <task id="LOCAL-00001" summary="upodated code">
       <created>1651889566181</created>
