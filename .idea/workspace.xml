@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80b1db86-07aa-432f-89dd-e57c188fcbda" name="Changes" comment="testing update">
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/data_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dsProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dsProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="80b1db86-07aa-432f-89dd-e57c188fcbda" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bard.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/game.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -50,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651848539828</updated>
       <workItem from="1651848541755" duration="14374000" />
-      <workItem from="1652382673687" duration="495000" />
+      <workItem from="1652382673687" duration="1853000" />
     </task>
     <task id="LOCAL-00001" summary="upodated code">
       <created>1651889566181</created>
@@ -66,7 +67,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651895378091</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="goat">
+      <created>1652383215148</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652383215148</updated>
+    </task>
+    <task id="LOCAL-00004" summary="created data loader and utils classes">
+      <created>1652383996548</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652383996548</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +101,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="upodated code" />
     <MESSAGE value="testing update" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing update" />
+    <MESSAGE value="goat" />
+    <MESSAGE value="created data loader and utils classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="created data loader and utils classes" />
   </component>
 </project>
