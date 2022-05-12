@@ -6,8 +6,13 @@ import pprint
 
 class DataLoader():
 
+    player_entities = []
+    hero_entities = []
+    map_entities = []
+
+
     def __int__(self, folder_location: str):
-        pass
+        file = open(folder)
 
 
     def
