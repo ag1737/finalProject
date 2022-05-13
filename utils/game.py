@@ -1,7 +1,10 @@
 import json
 import pandas as pd
-
+from shapely.geometry import Point
+from tqdm import tqdm
+import swifter
 from utils import utils
+from utils.map_utils import lane_from_coords
 
 
 class Game:
@@ -14,12 +17,19 @@ class Game:
         self.frames = json.load(f)
         self.parse_frames(self.frames)
 
+    def get_avg_player_gold(self):
+        pass
+
+    def get_avg_player_exp(self):
+        pass
+
     def get_players(self):
         player_df = pd.DataFrame(self.player_entities)
         player_df.reset_index(inplace=True, drop=True)
         player_df = player_df.set_index("Frame").bfill()
         player_df["PLAYER"] = player_df["UID"]
 
+        self.player_df = player_df
         return player_df
 
     def get_heros(self):
@@ -27,14 +37,26 @@ class Game:
         hero_df.reset_index(inplace=True, drop=True)
         hero_df = hero_df.set_index("Frame").bfill()
 
+        hero_df["map_position"] = hero_df.swifter.apply(
+            lambda x: lane_from_coords(Point(float(x["XPOS"]), float(x["YPOS"]))), axis=1)
+        self.hero_df = hero_df
         return hero_df
+
+    def get_lane_percentage(self):
+        f = lambda x: x.size / self.hero_df.groupby('ID', dropna=False).size()[x.iloc[0]] * 100
+
+        df = (self.hero_df.groupby(['ID', 'map_position'], dropna=False)
+              .agg(counts=('map_position', 'size'),
+                   prcntg=('ID', f))
+              ).unstack(fill_value=0).stack()
+
+        return df
 
     def parse_frames(self, frames):
         frames = frames["frames"]
         entities = [x["Entities"] for x in frames]
 
         for frame_num, frame in enumerate(entities):
-            print(f"######FRAME NUMBER {frame_num}##########")
             for ID, entity in frame.items():
                 if entity["ENTITY_TYPE"] == "PlayerEntity":
                     dct = {k: [v] for k, v in entity.items()}
