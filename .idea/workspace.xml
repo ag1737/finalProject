@@ -2,41 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80b1db86-07aa-432f-89dd-e57c188fcbda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/game_data/5492147125.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5492227432.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5492324283.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5492375229.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5492415037.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5492471388.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5492505653.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5492814659.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5492880810.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5492976808.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5493036539.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5493104419.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494103618.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494167127.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494195431.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494230619.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494251692.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494297555.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494358242.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494373956.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494436377.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494489946.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494563706.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494571133.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5494646356.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5495120715.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5495184096.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game_data/5495220323.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/map_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bard.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/bard.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/data_loader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +50,35 @@
       <recent name="G:\git\finalProject\game_data" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="benchmark" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dsProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/benchmark.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.benchmark" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -88,7 +89,7 @@
       <updated>1651848539828</updated>
       <workItem from="1651848541755" duration="14374000" />
       <workItem from="1652382673687" duration="4135000" />
-      <workItem from="1652443050026" duration="4001000" />
+      <workItem from="1652443050026" duration="7985000" />
     </task>
     <task id="LOCAL-00001" summary="upodated code">
       <created>1651889566181</created>
@@ -125,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652384701289</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Loading Multiple Files">
+      <created>1652447166762</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652447166762</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +156,8 @@
     <MESSAGE value="goat" />
     <MESSAGE value="created data loader and utils classes" />
     <MESSAGE value="Game Loader now working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game Loader now working" />
+    <MESSAGE value="Loading Multiple Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Loading Multiple Files" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -162,15 +171,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utils/game.py</url>
-          <line>53</line>
+          <line>56</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook://G:/git/finalProject/bard.ipynb</url>
-          <line>10</line>
+          <line>12</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/finalProject$benchmark.coverage" NAME="benchmark Coverage Results" MODIFIED="1652448612898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

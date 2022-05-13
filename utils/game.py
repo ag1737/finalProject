@@ -18,10 +18,14 @@ class Game:
         self.parse_frames(self.frames)
 
     def get_avg_player_gold(self):
-        pass
+        df = self.player_df.loc[self.player_df.index.min() + 900].groupby("ID").mean()["GOLD"]
+        self.avg_player_gold = df
+        return df
 
     def get_avg_player_exp(self):
-        pass
+        df = self.player_df.loc[self.player_df.index.min() + 900].groupby("ID").mean()["XP"]
+        self.avg_player_exp = df
+        return df
 
     def get_players(self):
         player_df = pd.DataFrame(self.player_entities)
@@ -49,7 +53,7 @@ class Game:
               .agg(counts=('map_position', 'size'),
                    prcntg=('ID', f))
               ).unstack(fill_value=0).stack()
-
+        self.lane_percentage = df
         return df
 
     def parse_frames(self, frames):
@@ -59,20 +63,12 @@ class Game:
         for frame_num, frame in enumerate(entities):
             for ID, entity in frame.items():
                 if entity["ENTITY_TYPE"] == "PlayerEntity":
-                    dct = {k: [v] for k, v in entity.items()}
+                    dct = {k: v for k, v in entity.items()}
                     dct["Frame"] = frame_num
-                    utils.clean_dict(dct)
                     self.player_entities.append(dct)
 
 
                 elif entity["ENTITY_TYPE"] == "HeroEntity":
-                    dct = {k: [v] for k, v in entity.items()}
+                    dct = {k: v for k, v in entity.items()}
                     dct["Frame"] = frame_num
-                    utils.clean_dict(dct)
                     self.hero_entities.append(dct)
-
-                elif entity["ENTITY_TYPE"] == "Dota2MapEntity":
-                    dct = {k: [v] for k, v in entity.items()}
-                    dct["Frame"] = frame_num
-                    utils.clean_dict(dct)
-                    self.map_entities.append(dct)
